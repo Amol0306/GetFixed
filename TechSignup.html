@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script >
+        $(document).ready(function(){
+      $(".login-form").hide();
+$(".login").css("background", "none");
+
+$(".login").click(function(){
+  $(".signup-form").hide();
+  $(".login-form").show();
+  $(".signup").css("background", "none");
+  $(".login").css("background", "#fff");
+});
+
+$(".signup").click(function(){
+  $(".signup-form").show();
+  $(".login-form").hide();
+  $(".login").css("background", "none");
+  $(".signup").css("background", "#fff");
+});
+
+$(".btn").click(function(){
+  $(".input").val("");
+});
+});
+    </script>
+
+</head>
+<body>
+       <!--main flex-->
+    <div style=" height: 100vh;  display: flex; flex-direction: column;">
+
+      <!--footer flex-->
+      <div style=" background: rgb(62, 62, 194);flex: 1; display: flex; ">
+
+        <div style="flex: 1;  justify-content: center; align-items: center; display: flex;" >
+         <h2 style="color: white;">GetFixed</h2>
+       </div> 
+
+        <div style="flex: 8;  ">
+         <h3 style="color: white; justify-content: center; align-items: center; display: flex;">Welcome to the GetFixed</h3>
+       </div>
+
+        <div style="flex: 1; "></div> 
+
+       </div>
+
+       <!--body flex-->
+       <div style="  flex: 16; display: flex; justify-content: center; align-items: center;">
+
+  <!--body-->
+    <div class="wrapper">
+        <div class="container">
+          
+          <div class="signup">Sign Up</div>
+          <div class="login">Log In</div>
+          
+           <div class="signup-form">
+              <input type="text" placeholder="Your Email Address" class="input"><br />
+              <input type="text" placeholder="Choose a Username" class="input"><br />
+              <input type="password" placeholder="Choose a Password" class="input"><br />
+              <div class="btn">Create account</div>
+           </div>
+          
+          <div class="login-form">
+              <input type="text" placeholder="Email or Username" class="input"><br />
+              <input type="password" placeholder="Password" class="input"><br />
+              <div class="btn">log in</div>
+              <span><a href="#">I forgot my username or password.</a></span>
+           </div>
+          
+        </div>
+      </div>
+    </div>
+    
+     <!--foot-->
+     <div style="background:rgb(62, 62, 194); flex: 1; display: flex; justify-content: center; align-items: center;">
+      <h7 style="color: white; justify-content: center; align-items: center; display: flex;">Copyright © 2020 GetFixed</h7>
+   </div>
+
+   
+</body>
+</html>
